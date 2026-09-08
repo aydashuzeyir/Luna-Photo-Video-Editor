@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <title>Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="brand">
+                <div class="brand-icon">✦</div>
+                <span>Studio</span>
+            </div>
+
+            <div class="header-actions">
+                <button id="searchBtn" aria-label="Axtar">⌕</button>
+                <button id="moreBtn" aria-label="Daha çox">•••</button>
+            </div>
+        </header>
+
+        <!-- ANA BANNER -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-label">CREATE</span>
+                <h1>Bring your<br>ideas to life.</h1>
+                <p>Foto və videolarını öz üslubunda redaktə et.</p>
+
+                <button class="start-btn" id="startBtn">
+                    <span>✦</span>
+                    Redaktəyə başla
+                </button>
+            </div>
+        </section>
+
+        <!-- YARAT -->
+        <section class="create-section">
+            <div class="section-heading">
+                <h2>Yarat</h2>
+                <button id="allBtn">Hamısı ›</button>
+            </div>
+
+            <div class="create-grid">
+
+                <button class="create-card" id="photoBtn">
+                    <div class="create-icon photo-icon">▧</div>
+                    <strong>Foto</strong>
+                    <small>Şəkil redaktə et</small>
+                </button>
+
+                <button class="create-card" id="videoBtn">
+                    <div class="create-icon video-icon">▶</div>
+                    <strong>Video</strong>
+                    <small>Video redaktə et</small>
+                </button>
+
+                <button class="create-card" id="collageBtn">
+                    <div class="create-icon collage-icon">▦</div>
+                    <strong>Kolaj</strong>
+                    <small>Şəkilləri birləşdir</small>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- POPULYAR -->
+        <section class="content-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Populyar</h2>
+                    <p>Effektlər və yaradıcı alətlər</p>
+                </div>
+
+                <button>Hamısı ›</button>
+            </div>
+
+            <div class="horizontal-cards">
+
+                <div class="visual-card card-one">
+                    <span>VINTAGE</span>
+                </div>
+
+                <div class="visual-card card-two">
+                    <span>CINEMA</span>
+                </div>
+
+                <div class="visual-card card-three">
+                    <span>PORTRAIT</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ALƏTLƏR -->
+        <section class="tools-section">
+
+            <div class="section-heading">
+                <h2>Sürətli alətlər</h2>
+                <button>Hamısı ›</button>
+            </div>
+
+            <div class="tools-grid">
+
+                <button>
+                    <span>✦</span>
+                    <small>Effektlər</small>
+                </button>
+
+                <button>
+                    <span>◐</span>
+                    <small>Filtrlər</small>
+                </button>
+
+                <button>
+                    <span>✂</span>
+                    <small>Kəsmə</small>
+                </button>
+
+                <button>
+                    <span>♪</span>
+                    <small>Musiqi</small>
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- AŞAĞI MENYU -->
+        <nav class="bottom-nav">
+
+            <button class="nav-item active" id="homeNav">
+                <span>⌂</span>
+                <small>Ana səhifə</small>
+            </button>
+
+            <button class="add-button" id="addBtn">
+                +
+            </button>
+
+            <button class="nav-item" id="projectsNav">
+                <span>▣</span>
+                <small>Layihələr</small>
+            </button>
+
+            <button class="nav-item" id="profileNav">
+                <span>○</span>
+                <small>Profil</small>
+            </button>
+
+        </nav>
+
+    </div>
+
+    <!-- FOTO SEÇ -->
+    <input
+        type="file"
+        id="photoInput"
+        accept="image/*"
+        hidden
+    >
+
+    <!-- VİDEO SEÇ -->
+    <input
+        type="file"
+        id="videoInput"
+        accept="video/*"
+        hidden
+    >
+
+    <script src="script.js"></script>
+
+</body>
+</html>
